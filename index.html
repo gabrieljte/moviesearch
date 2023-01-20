@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie DB</title>
+    <link rel="stylesheet" href="mainstyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- nav list -->
+    <nav class="main-nav">
+      <img src="images/movie.svg" width="50px" height="50px" />
+      <ul class="nav-list">
+        <li class="nav-list-item">Pesquisar</li>
+        <li class="nav-list-item">Sobre</li>
+      </ul>
+    </nav>
+
+    <main class="main-section">
+      
+      <div class="search-section">
+        <input type="text" name="movie" id="movie-input" placeholder="Digite seu filme"/>
+        <div class="buttons">
+          <button class="search-btn btn-input">
+            <img src="images/lupa.svg" width="12px"/>
+          </button>
+          <button class="delete-btn btn-input">
+            <img src="images/trash.svg" width="12px">
+          </button>
+        </div>
+      </div>
+
+      <section class="movie-grid">
+        <div class="movie-card hidden">
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <img src="images/movie.svg" width="50px" height="50px" />
+      <h1>API Usada: The Movie DataBase</h1>
+    </footer>
+  </body>
+
+  <script src="app.js"></script>
+</html>
